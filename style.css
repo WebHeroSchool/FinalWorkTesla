@@ -84,7 +84,7 @@ body {
 	left: 0;
 	background: #e51937;
  }
-.tesla { margin: 0; }
+.tesla { margin: 0 0 27px 0; }
 .tesla__title{
  	margin: 0;
  	height: 100px;
@@ -110,7 +110,6 @@ body {
  	background-repeat: no-repeat;
  	background-position: center;
 	margin: 0;
-	/*margin: 0 0 30px 0;*/
 }
 .detail {
 	margin: 0 0 25px 0;
@@ -211,15 +210,17 @@ body {
 }
 .testdrive__link:hover { color: #e51937; }
 .order {
-	border: 2px solid #e51937;
 	min-width: 160px;
 	min-height: 35px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin: 0 35px;
 	cursor: pointer;
 	transition: all 1s ease-out;
+}
+.order_red {
+	border: 2px solid #e51937;
+	margin: 0 35px;
 }
 .order__button {
 	font-family: montserratbold;
@@ -227,9 +228,11 @@ body {
 	font-weight: 700;
 	font-size: 13px;
 	text-transform: uppercase;
+}
+.order__button_red {
 	color: #e51937;
 }
-.order:hover {
+.order_red:hover {
 	color: #000;
 	box-shadow: inset 2px 2px 5px #8b0000;
 }
@@ -281,5 +284,148 @@ body {
 	}
 }
 
-
-
+.discriptoion {
+	margin: 0;
+}
+.description__conteiner {
+	display: flex;
+	justify-content: space-between;
+	min-height: 900px;
+}
+.panel {
+	background-image: url(img/tesla-model-s-cockpit.png); 
+	background-repeat: no-repeat;
+	background-position: 0% 100%;
+	/*background-size: 100%;*/
+	width: 70%;
+	margin: 0;
+}
+.panel__title {
+	font-size: 70px;
+	margin: 0;
+	padding: 62px 0 0 82px;
+}
+.description__column {
+	background: #E51937;
+	width: 445px;
+	margin: 0;
+}
+.column__title {
+	font-family: montserratbold;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 30px;
+	color: #FFF;
+	margin: 0 0 15px 0;
+	padding: 52px 0 0 55px;
+}
+.column__body {
+	font-family: montserratregular;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	color: #FFF;
+	line-height: 18px;
+	margin: 0 0 70px 0;
+	padding: 0 72px 0 52px;
+}
+.specific {
+	padding: 0 0 0 50px;
+	margin: 0 0 160px 0;
+}
+.text1 {
+	font-size: 35px;
+	font-family: montserratbold;
+	font-style: normal;
+	font-weight: 700;
+	color: #FFF;
+	line-height: 18px;
+}
+.text2 {
+	font-size: 20px;
+	font-family: montserratbold;
+	font-style: normal;
+	font-weight: 700;
+	color: #FFF;
+	line-height: 18px;
+}
+.text3 {
+	font-size: 12px;
+	font-family: montserratregular;
+	font-style: normal;
+	font-weight: normal;
+	color: #FFF;
+	margin: 0;
+	line-height: 18px;
+}
+.specific__display {
+	display: flex;
+	padding: 0 0 0 4px;
+	margin: 0 0 35px 0;
+}
+.display__img {
+	width: 36px;
+	height: 53px;
+	padding: 5px 0 0 0;
+}
+.specific__container {
+	display: flex;
+	flex-direction: column;
+	padding: 5px 0 0 20px;
+}
+.display__content {
+	padding: 0;
+	margin: 0;
+}
+.specific__wifi {
+	display: flex;
+	margin: 0 0 30px 0;
+}
+.wifi__img {
+	width: 44px;
+	height: 35px;
+	padding: 18px 0 0 0;
+}
+.specific__space {
+	display: flex;
+	padding: 0 0 0 4px;
+}
+.space__img {
+	width: 36px;
+	height: 56px;
+}
+.buttons {
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-end;
+}
+.buttons__inform {
+	display: flex;
+	padding: 0 0 0 35px;
+	margin: 0 0 10px 0;
+}
+.inform__img {
+	width: 22px;
+	height: 22px;
+	background-image: url(img/groupinf.png);
+	margin: 0 10px 0 0;
+}
+.inform__link {
+	color: #fff;
+	text-decoration: none;
+	font-family: montserratbold;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 13px;
+}
+.order_white {
+	border: 2px solid #fff;
+	margin: 10px 20px 0 20px;
+}
+.order__button_white {
+	color: #fff;
+}
+.order_white:hover {
+	color: #000;
+	box-shadow: inset 2px 2px 5px #fff;
+}

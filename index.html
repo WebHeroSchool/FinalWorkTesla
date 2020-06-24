@@ -59,8 +59,8 @@
             <img class="testdrive__img" src="img/test-drive.png">
             <a class="testdrive__link" href="#">тест драйв</a>
           </div>
-          <div class="order">
-            <div class="order__button">заказать</div>
+          <div class="order order_red">
+            <div class="order__button order__button_red">заказать</div>
           </div>
         </div>
       </div> 
@@ -71,6 +71,7 @@
     </section>
 
     <section class="description">
+    <div class="description__conteiner">
       <div class="panel">
         <h2 class="panel__title">Model S</h2>
       </div>
@@ -80,30 +81,42 @@
         <div class="specific">
           <div class="specific__display">
             <img class="display__img" src="img/screen.png">
-            <span class="display__text1">17</span>
-            <span class="display__text2">дюймов</span>
-            <p class="display__text3">Большой дисплей</p>
+            <div class="specific__container">
+              <div class="display__content">
+	            <span class="display__text1 text1">17</span>
+	            <span class="display__text2 text2">дюймов</span>
+	           </div>
+	           <p class="display__text3 text3">Большой дисплей</p> 
+	        </div>
           </div>
           <div class="specific__wifi">
             <img class="wifi__img" src="img/groupwifi.png">
-            <p class="wifi__text1">Беспроводное обновление ПО</p>
-            <p class="wifi__text2">Повышенная функциональность</p>
+            <div class="specific__container">
+	          <div class="wifi__text2 text2">Беспроводное<br> обновление ПО</div>
+	          <p class="wifi__text3 text3">Повышенная<br>функциональность</p>
+	        </div>
           </div>
           <div class="specific__space">
             <img class="space__img" src="img/bag.png">
-            <span class="space__text1">894</span>
-            <span class="space__text2">литра</span>
-            <p class="space__text3">Объем грузового пространства</p>
+            <div class="specific__container">
+              <div class="specific__content">
+	            <span class="space__text1 text1">894</span>
+	            <span class="space__text2 text2">литра</span>
+	          </div>
+	          <p class="space__text3 text3">Объем грузового<br>ространства</p>
+            </div>
           </div>
         </div>
         <div class="buttons">
           <div class="buttons__inform">
-            <img class="inform__img" src="img/groupinf.png">
+          	<div class="inform__img"></div>
             <a class="inform__link" href="#">узнать больше</a>
           </div>
-          <div class="buttons__order">заказать</div>
+          <div class="order order_white">
+            <div class="order__button order__button_white">заказать</div>
+          </div>
         </div>
-      </div>
+    </div>
     </section>
 
     <section class="security">
@@ -170,10 +183,12 @@
         </div>
         <div class="buttons">
           <div class="buttons__inform">
-            <img class="inform__img" src="img/groupinf.png">
+          	<div class="inform__img"></div>
             <a class="inform__link" href="#">узнать больше</a>
           </div>
-          <div class="buttons__order">заказать</div>
+          <div class="order order_white">
+            <div class="order__button order__button_white">заказать</div>
+          </div>
         </div>
       </div>
       <div class="scheme">
