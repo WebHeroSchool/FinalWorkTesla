@@ -9,7 +9,7 @@
   <body>
     <header class="header"> <!-- блок -->
       <nav class="header__nav"> <!-- блок, ограничивающий ширину контент. части -->
-        <div class="container"> <!-- блок-контейнер для flex-элементов -->
+        <div class="header__container"> <!-- блок-контейнер для flex-элементов -->
           <div class="header__img">
             <img class="header__logo" src="img/tesla-wordmark-red.png">
           </div>
@@ -72,43 +72,43 @@
 
     <section class="description">
     <div class="description__conteiner">
-      <div class="panel">
+      <div class="description__panel">
         <h2 class="panel__title">Model S</h2>
       </div>
       <div class="description__column">
       	<h3 class="column__title">Будущее вождение</h3>
-        <p class="column__body">Модель S обладает лучшей в своем классе вместимостью: в машине поместится до пяти взрослых и двух детей. Оснащена современным 17-дюймовым сенсорным экраном. Усовершенствованная шумовая инженерия создает динамику звука, сравнимую со студией звукозаписи, а стеклянная крыша обеспечивает просторный интерьер для каждого пассажира.</p>
+        <p class="column__body column__body_indentbig">Модель S обладает лучшей в своем классе вместимостью: в машине поместится до пяти взрослых и двух детей. Оснащена современным 17-дюймовым сенсорным экраном. Усовершенствованная шумовая инженерия создает динамику звука, сравнимую со студией звукозаписи, а стеклянная крыша обеспечивает просторный интерьер для каждого пассажира.</p>
         <div class="specific">
           <div class="specific__display">
             <img class="display__img" src="img/screen.png">
-            <div class="specific__container">
+            <div class="display__container block">
               <div class="display__content">
-	            <span class="display__text1 text1">17</span>
-	            <span class="display__text2 text2">дюймов</span>
+	            <span class="display__text text1">17</span>
+	            <span class="display__text text2">дюймов</span>
 	           </div>
-	           <p class="display__text3 text3">Большой дисплей</p> 
+	           <p class="display__text text3">Большой дисплей</p> 
 	        </div>
           </div>
           <div class="specific__wifi">
             <img class="wifi__img" src="img/groupwifi.png">
-            <div class="specific__container">
-	          <div class="wifi__text2 text2">Беспроводное<br> обновление ПО</div>
-	          <p class="wifi__text3 text3">Повышенная<br>функциональность</p>
+            <div class="wifi__container block">
+	          <div class="wifi__text text2">Беспроводное<br> обновление ПО</div>
+	          <p class="wifi__text text3">Повышенная<br>функциональность</p>
 	        </div>
           </div>
           <div class="specific__space">
             <img class="space__img" src="img/bag.png">
-            <div class="specific__container">
-              <div class="specific__content">
-	            <span class="space__text1 text1">894</span>
-	            <span class="space__text2 text2">литра</span>
+            <div class="space__container block">
+              <div class="space__content">
+	            <span class="space__text text1">894</span>
+	            <span class="space__text text2">литра</span>
 	          </div>
-	          <p class="space__text3 text3">Объем грузового<br>ространства</p>
+	          <p class="space__text text3">Объем грузового<br>ространства</p>
             </div>
           </div>
         </div>
         <div class="buttons">
-          <div class="buttons__inform">
+          <div class="inform">
           	<div class="inform__img"></div>
             <a class="inform__link" href="#">узнать больше</a>
           </div>
@@ -120,9 +120,10 @@
     </section>
 
     <section class="security">
+    <div class="security__conteiner">
       <div class="security__column">
       	<h3 class="column__title">Самый безопасный автомобиль в мире</h3>
-        <p class="column__body">Модель S достигла наивысшей оценки безопасности любого автомобиля, когда-либо испытанного, и установила рекорд по наименьшей вероятности травмы пассажиров - от несчастных случаев на переднем, боковом, заднем сидении и в ДТП с переворотом авто.
+        <p class="column__body column__body_indentsmall">Модель S достигла наивысшей оценки безопасности любого автомобиля, когда-либо испытанного, и установила рекорд по наименьшей вероятности травмы пассажиров - от несчастных случаев на переднем, боковом, заднем сидении и в ДТП с переворотом авто.
         </p>
         <div class="rating">
           <h3 class="rating__title">Оценка защиты:</h3>
@@ -130,50 +131,55 @@
             <tr class="table__row">
               <th class="table__cell">спереди</th>
               <th class="table__cell">
-                <span>&#9733;</span> 
-                <span>&#9733;</span> 
-                <span>&#9733;</span> 
-                <span>&#9733;</span> 
-                <span>&#9733;</span>
+                <span class="star">&#9733;</span> 
+                <span class="star">&#9733;</span> 
+                <span class="star">&#9733;</span> 
+                <span class="star">&#9733;</span> 
+                <span class="star">&#9733;</span>
               </th>
+            </tr>
             <tr class="table__row">
               <th class="table__cell">сбоку</th>
               <th class="table__cell">
-                <span>&#9733;</span> 
-                <span>&#9733;</span> 
-                <span>&#9733;</span> 
-                <span>&#9733;</span> 
-                <span>&#9733;</span>
+                <span class="star">&#9733;</span> 
+                <span class="star">&#9733;</span> 
+                <span class="star">&#9733;</span> 
+                <span class="star">&#9733;</span> 
+                <span class="star">&#9733;</span>
               </th>
+            </tr>
             <tr class="table__row">
               <th class="table__cell">сбоку 
                 <span class="cell__text">(стойка)</span>
               </th>
               <th class="table__cell">
-                <span>&#9733;</span> 
-                <span>&#9733;</span> 
-                <span>&#9733;</span> 
-                <span>&#9733;</span> 
-                <span>&#9733;</span>
+                <span class="star">&#9733;</span> 
+                <span class="star">&#9733;</span> 
+                <span class="star">&#9733;</span> 
+                <span class="star">&#9733;</span> 
+                <span class="star">&#9733;</span>
               </th>
+            </tr>
             <tr class="table__row">
               <th class="table__cell">водитель</th>
               <th class="table__cell">
-                <span>&#9733;</span> 
-                <span>&#9733;</span> 
-                <span>&#9733;</span> 
-                <span>&#9733;</span> 
-                <span>&#9733;</span>
+                <span class="star">&#9733;</span> 
+                <span class="star">&#9733;</span> 
+                <span class="star">&#9733;</span> 
+                <span class="star">&#9733;</span> 
+                <span class="star">&#9733;</span>
               </th>
+            </tr>
             <tr class="table__row">
               <th class="table__cell">пассажир</th>
               <th class="table__cell">
-                <span>&#9733;</span> 
-                <span>&#9733;</span> 
-                <span>&#9733;</span> 
-                <span>&#9733;</span> 
-                <span>&#9733;</span>
+                <span class="star">&#9733;</span> 
+                <span class="star">&#9733;</span> 
+                <span class="star">&#9733;</span> 
+                <span class="star">&#9733;</span> 
+                <span class="star">&#9733;</span>
               </th>
+            </tr>
           </table>
         </div>
         <div class="safety">
@@ -182,7 +188,7 @@
           <p class="safety__text2">безопасности</p>
         </div>
         <div class="buttons">
-          <div class="buttons__inform">
+          <div class="inform">
           	<div class="inform__img"></div>
             <a class="inform__link" href="#">узнать больше</a>
           </div>
@@ -191,9 +197,10 @@
           </div>
         </div>
       </div>
-      <div class="scheme">
+      <div class="security__scheme">
         <img class="scheme__img" src="img/car-frame-group.png">
       </div>
+    </div>
     </section>    
   </body>
 </html>
