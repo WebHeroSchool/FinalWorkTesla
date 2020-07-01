@@ -295,7 +295,10 @@ body {
 .description__panel {
 	background-image: url(img/tesla-model-s-cockpit.png); 
 	background-repeat: no-repeat;
-	background-position: 0% 100%;
+	background-size: cover;
+	/*background-position: 0% 100%;*/
+	/*background-position: -20px 30px;*/
+	background-position: 0% 30px;
 	margin: 0;
 	width: calc(100% - 445px);
 }
@@ -406,7 +409,7 @@ body {
 .link__img {
 	width: 22px;
 	height: 22px;
-	background-image: url(img/groupinf.png);
+	background-image: url(img/group.png);
 	margin: 0 10px 0 0;
 }
 .link__inform {
@@ -490,7 +493,6 @@ body {
 }
 .safety {
 	width: 280px;
-	/*height: 92px;*/
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -535,5 +537,5 @@ body {
 .scheme__img {
 	position: absolute;
 	top: 170px;
-	right: 45px;
+	left: -100px;
 }
