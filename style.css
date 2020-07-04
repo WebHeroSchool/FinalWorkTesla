@@ -109,6 +109,7 @@ body {
  	background-image: url(img/tesla-logo-car.png);
  	background-repeat: no-repeat;
  	background-position: center;
+ 	background-size: 100% auto; /*Ширина фонового изображения зависит от размеров контейнера*/
 	margin: 0;
 }
 .detail {
@@ -296,8 +297,6 @@ body {
 	background-image: url(img/tesla-model-s-cockpit.png); 
 	background-repeat: no-repeat;
 	background-size: cover;
-	/*background-position: 0% 100%;*/
-	/*background-position: -20px 30px;*/
 	background-position: 0% 30px;
 	margin: 0;
 	width: calc(100% - 445px);
@@ -531,6 +530,7 @@ body {
 	background-image: url(img/model-s.png);
 	background-repeat: no-repeat;
 	background-position: 100% 20%;
+	background-size: 80% auto;
 	margin: 0;
 	width: calc(100% - 445px);
 }
@@ -538,4 +538,45 @@ body {
 	position: absolute;
 	top: 170px;
 	left: -100px;
+	width: 105%;
+}
+
+@media (max-width: 768px) {
+	.header__nav {
+		max-width: 720px;
+	}
+	ul {
+		padding-inline-start: 14px;
+	}
+	.btn__list {
+		width: 38px;
+	}
+	.line {
+		height: 2.5px;
+	}
+	.line::after {
+		top: 10px;
+	}
+	.line::before {
+		top: -10px;
+	}
+	.header {
+		margin-bottom: 60px;
+	}
+	.tesla__disc {
+		min-height: 370px;
+		/*background-size: 110%;*/
+	}
+
+	.item {
+		display: none;
+	}
+	.wrap {
+		flex-wrap: wrap;
+		max-width: 490px;
+	}
+	.detail {
+		display: flex;
+		justify-content: center;
+	}
 }
