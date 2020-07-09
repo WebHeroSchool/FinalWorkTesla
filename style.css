@@ -37,9 +37,8 @@ body {
 	text-decoration: none;
 	color: #000;
 	font-size: 15px;
-	font-weight: 700px;
+	font-weight: 700;
 	font-family: "montserratbold";
-	padding: 0 0 5px 0;
 	background-image: linear-gradient(#e51937, #e51937);
 	background-position: 0% 100%;
 	background-repeat: no-repeat;
@@ -84,7 +83,9 @@ body {
 	left: 0;
 	background: #e51937;
  }
-.tesla { margin: 0 0 27px 0; }
+.tesla { 
+	margin: 0 0 27px 0;
+ }
 .tesla__title{
  	margin: 0;
  	height: 100px;
@@ -104,16 +105,22 @@ body {
 	text-align: center;
 	padding: 2px 0 0 0;
  }
+.tesla__wrap {	
+	margin: 0;
+}
 .tesla__disc {
-	min-height: 500px;
+	min-height: 502px;
+	max-width: 1500px;
+	min-width: 800px;
+	/*width: 2500px;*/
+	margin: 0 auto;
  	background-image: url(img/tesla-logo-car.png);
  	background-repeat: no-repeat;
  	background-position: center;
  	background-size: 100% auto; /*Ширина фонового изображения зависит от размеров контейнера*/
-	margin: 0;
 }
 .detail {
-	margin: 0 0 25px 0;
+	margin: 0 0 30px 0;
 }
 .wrap {
 	display: flex;
@@ -126,10 +133,16 @@ body {
 	margin: 0 35px;
 }
 .speed__img {
+	background-image: url(img/спидометр.jpg);
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	width: 60px; 
+}
+/*.speed__img {
 	width: 60px;
 	height: 60px;
 	margin: 0 9px 0 0;
-}
+}*/
 .speed__container {
 	display: flex;
 	flex-direction: column;
@@ -162,9 +175,15 @@ body {
 	margin: 0 35px;
 }
 .run__img {
+	background-image: url(img/запас-хода.jpg);
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	width: 60px;
+}
+/*.run__img {
 	width: 55px;
 	height: 65px;
-}
+}*/
 .run__container {
 	display: flex;
 	flex-direction: column;
@@ -191,13 +210,21 @@ body {
 	font-size: 12px;
 	margin: 0;
 }
-.testdrive {
+.wrap__link {
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	margin: 0 35px;
 }
-.testdrive__img { width: 35px; }
-.testdrive__link {
+.wrap__img {
+	background-image: url(img/test-drive.png);
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	width: 35px;
+	height: 30px;
+}
+/*.testdrive__img { width: 35px; }*/
+.wrap__test {
 	font-family: montserratbold;
 	font-style: normal;
 	font-weight: 700;
@@ -209,7 +236,7 @@ body {
 	cursor: pointer;
 	transition: color .5s ease-out;
 }
-.testdrive__link:hover { color: #e51937; }
+.wrap__test:hover { color: #e51937; }
 .order {
 	min-width: 160px;
 	min-height: 35px;
@@ -319,6 +346,7 @@ body {
 	font-weight: 700;
 	font-size: 30px;
 	color: #FFF;
+	line-height: 37px;
 }
 .column__title_indentbig {
 	margin: 0 0 15px 0;
@@ -397,13 +425,14 @@ body {
 .buttons {
 	display: flex;
 	justify-content: space-between;
-	align-items: flex-end;
+	align-items: center;
 }
 .buttons_first {
 	width: 350px;
 }
-.link {
+.link_two {
 	display: flex;
+	padding: 10px 0 0 0;
 }
 .link__img {
 	width: 22px;
@@ -418,6 +447,7 @@ body {
 	font-style: normal;
 	font-weight: 700;
 	font-size: 13px;
+	line-height: 25px;
 	text-transform: uppercase;
 }
 .order_white {
@@ -451,7 +481,7 @@ body {
 }
 .rating {
 	width: 295px;
-	margin: 0 0 90px 0;
+	margin: 0 0 95px 0;
 }
 .rating__title {
 	font-family: montserratbold;
@@ -475,7 +505,7 @@ body {
 	font-style: normal;
 	font-weight: 700;
 	font-size: 17px;
-	line-height: 21px;
+	line-height: 19px;
 	text-transform: uppercase;
 }
 .table__stars {
@@ -496,7 +526,7 @@ body {
 	justify-content: space-between;
 	align-items: center;
 	padding: 0 0 0 10px;
-	margin: 0 0 42px 0;
+	margin: 0 0 47px 0;
 }
 .safety__img {
 	width: 62px;
@@ -507,7 +537,7 @@ body {
 	font-style: normal;
 	font-weight: 700;
 	font-size: 50px;
-	line-height: 61px;
+	line-height: 50px;
 	color: #FFF;
 	margin: 0;
 	padding: 0;
@@ -534,20 +564,30 @@ body {
 	margin: 0;
 	width: calc(100% - 445px);
 }
-.scheme__img {
+.scheme__img1 {
 	position: absolute;
-	top: 170px;
-	left: -100px;
+	top: 172px;
+	left: -98px;
 	width: 105%;
+	max-width: 1200px;
+}
+.scheme__img2 {
+	display: none;
 }
 
 @media (max-width: 768px) {
 	.header__nav {
 		max-width: 720px;
 	}
+	.item {
+		display: none;
+	}
 	ul {
 		padding-inline-start: 14px;
 	}
+	/*.menu__list {
+  	min-width: none;
+	}*/
 	.btn__list {
 		width: 38px;
 	}
@@ -563,20 +603,173 @@ body {
 	.header {
 		margin-bottom: 60px;
 	}
+	.tesla {
+		margin: 0 0 55px 0;
+	}
 	.tesla__disc {
-		min-height: 370px;
-		/*background-size: 110%;*/
-	}
-
-	.item {
-		display: none;
-	}
-	.wrap {
-		flex-wrap: wrap;
-		max-width: 490px;
+		min-height: 453px;
+		background-image: url(img/teslalogo-car.png);
+		background-position: left;
+    background-size: 95% auto;
 	}
 	.detail {
 		display: flex;
 		justify-content: center;
+		margin: 0 0 60px 0;
+	}
+	.wrap {
+		flex-wrap: wrap;
+		max-width: 500px;
+		min-height: 190px;
+	}
+	.speed {
+		margin: 0 75px 0 0;
+		align-self: flex-start;
+	}
+	.speed__img {
+		width: 80px;
+		margin: 0 10px 0 0;
+	}
+	.speed__desc1 {
+		font-size: 50px;
+	}
+	.run {
+		margin: 0 20px 0 0;
+		align-self: flex-start;
+	}
+	.run__img {
+		width: 80px;
+	}
+	.run__desc1 {
+		font-size: 50px;
+	}
+	.wrap__link {
+		margin: 0 48px 8px 0;
+		align-self: flex-end;
+	}
+	.wrap__img {
+		background-image: url(img/steering-wheel.png);
+		width: 33px;
+		height: 33px;
+		margin: 0 15px 0 0;
+	}
+	.wrap__test {
+		color: #E51937;
+		font-size: 16px;
+	}
+	.order {
+		min-height: 50px;
+		min-width: 217px;
+	}
+	.order_red {
+    background: #E51937;
+    margin: 0;
+    align-self: flex-end;
+	}
+	.order__button {
+		font-size: 16px;
+	}
+	.order__button_red {
+    color: #FFF;
+	}
+
+	.description__conteiner {
+		flex-direction: column;
+	}
+	.description__panel {
+		min-height: 500px;
+		min-width: 770px;
+	}
+	.description__column {
+		min-width: 770px;
+		min-height: 487px;
+		padding: 55px 80px 0 35px;
+	}
+	.panel__title {
+		padding: 8px 53px 0 0;
+		text-align: right;
+	}
+	.column__block_section2 {
+		display: flex;
+		justify-content: space-between;
+		max-height: 315px;
+	}
+	.column__left_section2 {
+		max-width: 330px;
+	}
+	.column__title_indentbig {
+		margin: 0 0 25px 0;
+	}
+	.column__right_section2 {
+		padding: 8px 0 0 0;
+	}
+	.specific {
+		margin: 0;
+	}
+	.specific__display {
+		padding: 0;
+		margin: 0 0 20px 0;
+	}
+	.specific__wifi {
+		margin: 0 0 25px 0;
+	}
+	.buttons {
+		margin: 0 auto;
+	}
+	.buttons_first {
+		min-width: 500px;
+	}
+	.link__img {
+		width: 30px;
+		height: 30px;
+		background-repeat: no-repeat;
+		background-size: 100% auto;
+	}
+	.link__inform {
+		font-size: 16px;
+	}
+	.link_two {
+		padding: 12px 0 0 45px;
+	}
+
+	.security__conteiner {
+		flex-direction: column-reverse;
+	}
+	.security__scheme {
+		min-height: 537px;
+		min-width: 768px;
+		background-size: 77% auto;
+		background-position: 55% 16%;
+	}
+	.scheme__img1 {
+		display: none;
+	}
+	.scheme__img2 {
+		display: block;
+		position: absolute;
+		top: 75px;
+		width: 100%;
+		max-width: 735px;
+	}
+	.security__column {
+		width: 770px;
+		height: 487px;
+		padding: 63px 53px 0 35px;
+	/*	min-width: 768;
+		min-height: 487;*/
+	}
+	.column__block_section3 {
+		display: flex;
+		justify-content: space-between;
+		max-height: 297px;
+	}
+	.column__left_section3 {
+		max-width: 325px;
+	}
+	.buttons_second {
+		min-width: 480px;
+	}
+	.safety {
+		display: none;
 	}
 }

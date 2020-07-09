@@ -30,36 +30,38 @@
       </nav>
     </header>
     
-	<section class="tesla">
+		<section class="tesla">
       <h1 class="tesla__title">Model S</h1>
       <h3 class="tesla__subtitle">Добро пожаловать в будущее!</h3>
-      <p class="tesla__disc"></p>
+      <div class="tesla__wrap">
+      	<div class="tesla__disc"></div>
+      </div>
       <div class="detail">
         <div class="wrap">
           <div class="speed">
-            <img class="speed__img" src="img/спидометр.jpg">
+          	<div class="speed__img"></div>
             <div class="speed__container">
 	          <div class="speed__content">
 	          	<span class="speed__desc1">2,7</span>
 	          	<span class="speed__desc2">сек</span>
-			  </div>
+			  		</div>
 	          <p class="speed__text">0-100 км/час</p>
 	        </div>
           </div>
           <div class="run">
-            <img class="run__img" src="img/запас-хода.jpg">
+          	<div class="run__img"></div>
             <div class="run__container">
-              <div class="run__content">
+            <div class="run__content">
 	            <span class="run__desc1">632</span>
 	            <span class="run__desc2">км</span>
 	            <p class="run__text">запас хода</p>
 	          </div>
 	        </div>
           </div>
-          <div class="testdrive">
-            <img class="testdrive__img" src="img/test-drive.png">
-            <a class="testdrive__link" href="#">тест драйв</a>
-          </div>
+          <a class="wrap__link">
+          	<span class="wrap__img"></span>
+            <span class="wrap__test">тест драйв</span>
+          </a>
           <div class="order order_red">
             <div class="order__button order__button_red">заказать</div>
           </div>
@@ -77,39 +79,45 @@
         <h2 class="panel__title">Model S</h2>
       </div>
       <div class="description__column">
-      	<h3 class="column__title column__title_indentbig">Будущее вождение</h3>
-        <p class="column__body column__body_indentbig">Модель S обладает лучшей в своем классе вместимостью: в машине поместится до пяти взрослых и двух детей. Оснащена современным 17-дюймовым сенсорным экраном. Усовершенствованная шумовая инженерия создает динамику звука, сравнимую со студией звукозаписи, а стеклянная крыша обеспечивает просторный интерьер для каждого пассажира.</p>
-        <div class="specific">
-          <div class="specific__display">
-            <img class="display__img" src="img/screen.png">
-            <div class="display__container block">
-              <div class="display__content">
-	            <span class="display__text text1">17</span>
-	            <span class="display__text text2">дюймов</span>
-	           </div>
-	           <p class="display__text text3">Большой дисплей</p> 
-	        </div>
+        <div class="column__block_section2">
+          <div class="column__left_section2">
+          	<h3 class="column__title column__title_indentbig">Будущее вождение</h3>
+            <p class="column__body column__body_indentbig">Модель S обладает лучшей в своем классе вместимостью: в машине поместится до пяти взрослых и двух детей. Оснащена современным 17-дюймовым сенсорным экраном. Усовершенствованная шумовая инженерия создает динамику звука, сравнимую со студией звукозаписи, а стеклянная крыша обеспечивает просторный интерьер для каждого пассажира.</p>
           </div>
-          <div class="specific__wifi">
-            <img class="wifi__img" src="img/wifi.png">
-            <div class="wifi__container block">
-	          <div class="wifi__text text2">Беспроводное<br> обновление ПО</div>
-	          <p class="wifi__text text3">Повышенная<br>функциональность</p>
-	        </div>
-          </div>
-          <div class="specific__space">
-            <img class="space__img" src="img/bag.png">
-            <div class="space__container block">
-              <div class="space__content">
-	            <span class="space__text text1">894</span>
-	            <span class="space__text text2">литра</span>
-	          </div>
-	          <p class="space__text text3">Объем грузового<br>ространства</p>
+          <div class="column__right_section2">
+            <div class="specific">
+              <div class="specific__display">
+                <img class="display__img" src="img/screen.png">
+                <div class="display__container block">
+                  <div class="display__content">
+    	            <span class="display__text text1">17</span>
+    	            <span class="display__text text2">дюймов</span>
+    	           </div>
+    	           <p class="display__text text3">Большой дисплей</p> 
+    	        </div>
+              </div>
+              <div class="specific__wifi">
+                <img class="wifi__img" src="img/wifi.png">
+                <div class="wifi__container block">
+    	          <div class="wifi__text text2">Беспроводное<br> обновление ПО</div>
+    	          <p class="wifi__text text3">Повышенная<br>функциональность</p>
+    	        </div>
+              </div>
+              <div class="specific__space">
+                <img class="space__img" src="img/bag.png">
+                <div class="space__container block">
+                  <div class="space__content">
+      	            <span class="space__text text1">894</span>
+      	            <span class="space__text text2">литра</span>
+    	           </div>
+    	           <p class="space__text text3">Объем грузового<br>ространства</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
         <div class="buttons buttons_first">
-        	<a class="link" href="#">
+        	<a class="link link_two" href="#">
 					  <span class="link__img"></span>
 					  <span class="link__inform" href="#">узнать больше</span>
 					</a>
@@ -123,43 +131,49 @@
     <section class="security">
     <div class="security__conteiner">
       <div class="security__column">
-      	<h3 class="column__title column__title_indentsmall">Самый безопасный автомобиль в мире</h3>
-        <p class="column__body column__body_indentsmall">Модель S достигла наивысшей оценки безопасности любого автомобиля, когда-либо испытанного, и установила рекорд по наименьшей вероятности травмы пассажиров - от несчастных случаев на переднем, боковом, заднем сидении и в ДТП с переворотом авто.
-        </p>
-        <div class="rating">
-          <h3 class="rating__title">Оценка защиты:</h3>
-          <div class="rating__table">
-          	<div class="table__row">
-          		<div class="table__text">спереди</div>
-          		<div class="table__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          	</div>
-          	<div class="table__row">
-          		<div class="table__text">сбоку</div>
-          		<div class="table__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          	</div>
-          	<div class="table__row">
-          		<div class="table__text">сбоку<span class="table__explan">(стойка)</span></div>
-          		<div class="table__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          	</div>
-          	<div class="table__row">
-          		<div class="table__text">водитель</div>
-          		<div class="table__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          	</div>
-          	<div class="table__row">
-          		<div class="table__text">пассажир</div>
-          		<div class="table__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-          	</div>
+        <div class="column__block_section3">
+          <div class="column__left_section3">
+          	<h3 class="column__title column__title_indentsmall">Самый безопасный автомобиль в мире</h3>
+            <p class="column__body column__body_indentsmall">Модель S достигла наивысшей оценки безопасности любого автомобиля, когда-либо испытанного, и установила рекорд по наименьшей вероятности травмы пассажиров - от несчастных случаев на переднем, боковом, заднем сидении и в ДТП с переворотом авто.
+            </p>
+          </div>
+          <div class="column__right_section3">
+            <div class="rating">
+              <h3 class="rating__title">Оценка защиты:</h3>
+              <div class="rating__table">
+              	<div class="table__row">
+              		<div class="table__text">спереди</div>
+              		<div class="table__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              	</div>
+              	<div class="table__row">
+              		<div class="table__text">сбоку</div>
+              		<div class="table__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              	</div>
+              	<div class="table__row">
+              		<div class="table__text">сбоку<span class="table__explan">(стойка)</span></div>
+              		<div class="table__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              	</div>
+              	<div class="table__row">
+              		<div class="table__text">водитель</div>
+              		<div class="table__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              	</div>
+              	<div class="table__row">
+              		<div class="table__text">пассажир</div>
+              		<div class="table__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              	</div>
+              </div>
+            </div>
+          </div>
+          <div class="safety">
+            <img class="safety__img" src="img/groupvec.png">
+            <div class="safety__disc">
+  	          <div class="safety__text1">5 звезд</div>
+  	          <div class="safety__text2">безопасности</div>
+  	        </div>
           </div>
         </div>
-        <div class="safety">
-          <img class="safety__img" src="img/groupvec.png">
-          <div class="safety__disc">
-	          <div class="safety__text1">5 звезд</div>
-	          <div class="safety__text2">безопасности</div>
-	        </div>
-        </div>
         <div class="buttons buttons_second">
-          <a class="link" href="#">
+          <a class="link link_two" href="#">
 					  <span class="link__img"></span>
 					  <span class="link__inform" href="#">узнать больше</span>
 					</a>
@@ -169,7 +183,8 @@
         </div>
       </div>
       <div class="security__scheme">
-        <img class="scheme__img" src="img/car-frame-group.png">
+        <img class="scheme__img1" src="img/car-frame-group.png">
+        <img class="scheme__img2" src="img/сar-frame-group-media.png">
       </div>
     </div>
     </section>    
