@@ -112,7 +112,6 @@ body {
 	min-height: 502px;
 	max-width: 1500px;
 	min-width: 800px;
-	/*width: 2500px;*/
 	margin: 0 auto;
  	background-image: url(img/tesla-logo-car.png);
  	background-repeat: no-repeat;
@@ -138,11 +137,6 @@ body {
 	background-repeat: no-repeat;
 	width: 60px; 
 }
-/*.speed__img {
-	width: 60px;
-	height: 60px;
-	margin: 0 9px 0 0;
-}*/
 .speed__container {
 	display: flex;
 	flex-direction: column;
@@ -180,10 +174,6 @@ body {
 	background-repeat: no-repeat;
 	width: 60px;
 }
-/*.run__img {
-	width: 55px;
-	height: 65px;
-}*/
 .run__container {
 	display: flex;
 	flex-direction: column;
@@ -223,7 +213,6 @@ body {
 	width: 35px;
 	height: 30px;
 }
-/*.testdrive__img { width: 35px; }*/
 .wrap__test {
 	font-family: montserratbold;
 	font-style: normal;
@@ -449,6 +438,15 @@ body {
 	font-size: 13px;
 	line-height: 25px;
 	text-transform: uppercase;
+	background-image: linear-gradient(#FFE4E1, #FFE4E1);
+	background-position: 0% 100%;
+	background-repeat: no-repeat;
+	background-size: 0% 2px;
+	transition: background-size .3s, color .3s;
+}
+.link__inform:hover {
+	background-size: 100% 2px;
+	color: #FFE4E1;
 }
 .order_white {
 	border: 2px solid #fff;
@@ -574,7 +572,25 @@ body {
 .scheme__img2 {
 	display: none;
 }
-
+@media (max-width: 950px) {
+	.header__nav {
+		max-width: 940px;
+	}
+	.item {
+		display: none;
+	}
+	.model__list {
+		display: none;
+		padding: 0;
+	}
+	.menu__list {
+		padding: 0;
+  	min-width: unset; /*чтобы элемент не выходил за границы header*/
+	}
+	.scheme__img1 {
+		top: 200px;
+	}
+}
 @media (max-width: 768px) {
 	.header__nav {
 		max-width: 720px;
@@ -676,7 +692,6 @@ body {
 	.order__button_red {
     color: #FFF;
 	}
-
 	.description__conteiner {
 		flex-direction: column;
 	}
@@ -735,7 +750,6 @@ body {
 	.link_two {
 		padding: 12px 0 0 45px;
 	}
-
 	.security__conteiner {
 		flex-direction: column-reverse;
 	}
@@ -773,6 +787,25 @@ body {
 	}
 	.safety {
 		display: none;
+	}
+}
+@media (max-width: 675px) {
+	.column__title {
+		font-size: 25px;
+	}
+}
+@media (max-width: 645px) {
+	.column__right_section2 {
+		display: none;
+	}
+	.column__left_section2 {
+    max-width: 630px;
+	}
+	.column__right_section3 {
+		display: none;
+	}
+	.column__left_section3 {
+    max-width: 630px;
 	}
 }
 @media (max-width: 480px) {
@@ -976,7 +1009,7 @@ body {
 		min-height: 600px;
 	}
 	.security__column {
-		min-height: 304px;
+		height: 305px;
 		padding: 18px 25px 0 31px;
 	}
 	.column__title_indentsmall {
