@@ -1,3 +1,1027 @@
 body {
-	font-family: "montserratregular";
+  font-family: "montserratregular";
+  margin: 0;
+}
+.header {
+  margin-top: 25px;
+  margin-bottom: 38px;
+}
+.header__nav {
+	max-width: 1338px;
+  margin: 0 auto;
+  padding-right: 17px;
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__img { width: 200px; }
+.header__logo { width: 166px; }
+.model__list {
+  min-width: 490px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+}
+.menu__list {
+  min-width: 200px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0;
+}
+.item { list-style-type: none; }
+.link {
+	text-decoration: none;
+	color: #000;
+	font-size: 15px;
+	font-weight: 700;
+	font-family: "montserratbold";
+	background-image: linear-gradient(#e51937, #e51937);
+	background-position: 0% 100%;
+	background-repeat: no-repeat;
+	background-size: 0% 2px;
+	transition: background-size .3s, color .3s;
+}
+.link:hover {
+	background-size: 100% 2px;
+	color: #e51937;
+}
+.btn__list {
+  width: 25px;
+  height: 20px;
+  display: flex;
+	align-items: center;
+	justify-content: center;
+  float: right;
+}
+.line {
+	position: relative;
+	width: 90%;
+	height: 2px;
+	background: #e51937;
+}
+.line::after {
+	content: '';
+ 	position: absolute;
+ 	display: block;
+ 	width: 100%;
+ 	height: 100%;
+ 	top: 6px;
+  left: 0;
+ 	background: #e51937;
+ }
+.line::before {
+	content: '';
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 100%;
+	top: -6px;
+	left: 0;
+	background: #e51937;
+ }
+.tesla { 
+	margin: 0 0 27px 0;
+ }
+.tesla__title{
+ 	margin: 0;
+ 	height: 100px;
+  font-family: 'montserratbold';
+ 	font-style: normal;
+ 	font-size: 90px;
+ 	font-weight: 700;
+ 	text-align: center;
+ 	padding: 15px 0 0 0;
+ }
+.tesla__subtitle {
+ 	margin: 0;
+ 	font-family: 'montserratregular';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 15px;
+	text-align: center;
+	padding: 2px 0 0 0;
+ }
+.tesla__wrap {	
+	margin: 0;
+}
+.tesla__disc {
+	min-height: 502px;
+	max-width: 1500px;
+	min-width: 800px;
+	margin: 0 auto;
+ 	background-image: url(img/tesla-logo-car.png);
+ 	background-repeat: no-repeat;
+ 	background-position: center;
+ 	background-size: 100% auto; /*Ширина фонового изображения зависит от размеров контейнера*/
+}
+.detail {
+	margin: 0 0 30px 0;
+}
+.wrap {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.speed {
+	display: flex;
+	min-width: 150px;
+	margin: 0 35px;
+}
+.speed__img {
+	background-image: url(img/спидометр.jpg);
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	width: 60px; 
+}
+.speed__container {
+	display: flex;
+	flex-direction: column;
+	cursor: pointer;
+	transition: color .5s ease-out;
+}
+.speed__container:hover { color: #e51937; }
+.speed__desc1 {
+	font-family: montserratregular;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 35px;
+}
+.speed__desc2 {
+	font-family: montserratregular;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 20px;
+}
+.speed__text {
+	font-family: montserratregular;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	margin: 0;
+}
+.run{
+	display: flex;
+	min-width: 150px;
+	margin: 0 35px;
+}
+.run__img {
+	background-image: url(img/запас-хода.jpg);
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	width: 60px;
+}
+.run__container {
+	display: flex;
+	flex-direction: column;
+	cursor: pointer;
+	transition: color .5s ease-out;
+}
+.run__container:hover { color: #e51937; }
+.run__desc1 {
+	font-family:montserratregular;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 35px;
+}
+.run__desc2 {
+	font-family: montserratregular;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 20px;
+}
+.run__text {
+	font-family: montserratregular;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	margin: 0;
+}
+.wrap__link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 35px;
+}
+.wrap__img {
+	background-image: url(img/test-drive.png);
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	width: 35px;
+	height: 30px;
+}
+.wrap__test {
+	font-family: montserratbold;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 13px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #000;
+	cursor: pointer;
+	transition: color .5s ease-out;
+}
+.wrap__test:hover { color: #e51937; }
+.order {
+	min-width: 160px;
+	min-height: 35px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	transition: all 1s ease-out;
+}
+.order_red {
+	border: 2px solid #e51937;
+	margin: 0 35px;
+}
+.order__button {
+	font-family: montserratbold;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 13px;
+	text-transform: uppercase;
+}
+.order__button_red {
+	color: #e51937;
+}
+.order_red:hover {
+	color: #000;
+	box-shadow: inset 2px 2px 5px #8b0000;
+}
+.arrow {
+	cursor: pointer;
+	position: relative;
+	width: 40px;
+	height: 30px;
+	margin: auto;
+}
+.arrow__left {
+	position: absolute;
+	background: #e51937;
+	top: 10px;
+	left: 0;
+	width: 25px;
+	height: 2px;
+	display: block;
+	transform: rotate(45deg);
+	float: right;
+}
+.arrow__right {
+	position: absolute;
+	background: #e51937;
+	top: 10px;
+	left: 16px;
+	width: 25px;
+	height: 2px;
+	display: block;
+	transform: rotate(-45deg);
+	float: right;
+}
+.arrow:hover { animation: arrow 1s linear infinite -.5s; }
+@keyframes arrow {
+	0% {
+		opacity: 0;
+		transform: translateY(-20px);
+	}
+	10%, 90% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+	100% {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+}
+
+.discriptoion {
+	margin: 0;
+}
+.description__conteiner {
+	display: flex;
+	justify-content: space-between;
+	min-height: 900px;
+}
+.description__panel {
+	background-image: url(img/tesla-model-s-cockpit.png); 
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0% 30px;
+	margin: 0;
+	width: calc(100% - 445px);
+}
+.panel__title {
+	font-size: 70px;
+	margin: 0;
+	padding: 62px 0 0 82px;
+}
+.description__column {
+	background: #E51937;
+	width: 445px;
+	margin: 0;
+	padding: 50px 60px 0 55px;
+	box-sizing: border-box; /*ширина включает в себя внутренний отступ и рамку*/
+}
+.column__title {
+	font-family: montserratbold;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 30px;
+	color: #FFF;
+	line-height: 37px;
+}
+.column__title_indentbig {
+	margin: 0 0 15px 0;
+}
+.column__body {
+	font-family: montserratregular;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	color: #FFF;
+	line-height: 18px;
+}
+.column__body_indentbig {
+	margin: 0 0 70px 0;
+}
+.specific {
+	margin: 0 0 160px 0;
+}
+.text1 {
+	font-size: 35px;
+	font-family: montserratbold;
+	font-style: normal;
+	font-weight: 700;
+	color: #FFF;
+	line-height: 18px;
+}
+.text2 {
+	font-size: 20px;
+	font-family: montserratbold;
+	font-style: normal;
+	font-weight: 700;
+	color: #FFF;
+	line-height: 18px;
+}
+.text3 {
+	font-size: 12px;
+	font-family: montserratregular;
+	font-style: normal;
+	font-weight: normal;
+	color: #FFF;
+	margin: 0;
+	line-height: 18px;
+}
+.specific__display {
+	display: flex;
+	padding: 0 0 0 4px;
+	margin: 0 0 35px 0;
+}
+.display__img {
+	width: 36px;
+	height: 53px;
+	padding: 5px 0 0 0;
+}
+.block {
+	display: flex;
+	flex-direction: column;
+	padding: 5px 0 0 20px;
+}
+.specific__wifi {
+	display: flex;
+	margin: 0 0 30px 0;
+}
+.wifi__img {
+	width: 44px;
+	height: 35px;
+	padding: 18px 0 0 0;
+}
+.specific__space {
+	display: flex;
+	padding: 0 0 0 4px;
+}
+.space__img {
+	width: 36px;
+	height: 56px;
+}
+.buttons {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.buttons_first {
+	width: 350px;
+}
+.link_two {
+	display: flex;
+	padding: 10px 0 0 0;
+}
+.link__img {
+	width: 22px;
+	height: 22px;
+	background-image: url(img/group.png);
+	margin: 0 10px 0 0;
+}
+.link__inform {
+	color: #fff;
+	text-decoration: none;
+	font-family: montserratbold;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 13px;
+	line-height: 25px;
+	text-transform: uppercase;
+	background-image: linear-gradient(#FFE4E1, #FFE4E1);
+	background-position: 0% 100%;
+	background-repeat: no-repeat;
+	background-size: 0% 2px;
+	transition: background-size .3s, color .3s;
+}
+.link__inform:hover {
+	background-size: 100% 2px;
+	color: #FFE4E1;
+}
+.order_white {
+	border: 2px solid #fff;
+	margin: 10px 0 0 0;
+}
+.order__button_white {
+	color: #fff;
+}
+.order_white:hover {
+	color: #000;
+	box-shadow: inset 2px 2px 5px #fff;
+}
+.security__conteiner {
+	display: flex;
+	justify-content: space-between;
+	min-height: 900px;
+}
+.security__column {
+	background: #E51937;
+	width: 445px;
+	margin: 0;
+	padding: 50px 70px 0 55px;
+	box-sizing: border-box; /*ширина включает в себя внутренний отступ и рамку*/
+}
+.column__title_indentsmall {
+	margin: 0 0 18px 0;
+}
+.column__body_indentsmall {
+	margin: 0 0 60px 0;
+}
+.rating {
+	width: 295px;
+	margin: 0 0 95px 0;
+}
+.rating__title {
+	font-family: montserratbold;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 37px;
+	color: #FFF;
+	margin: 0 0 16px 0;
+}
+.rating__table {
+	color: #FFF;
+}
+.table__row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+} 
+.table__text {
+	font-family: montserratbold;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 17px;
+	line-height: 19px;
+	text-transform: uppercase;
+}
+.table__stars {
+	font-family: "Lucida Sans Unicode", "Arial Unicode MS";
+	font-size: 25px;
+	letter-spacing: 7px;
+	margin: 0;
+	padding: 0;
+}
+.table__explan {
+	font-size: 10px;
+	line-height: 12px;
+	opacity: 0.7;
+}
+.safety {
+	width: 280px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 0 0 10px;
+	margin: 0 0 47px 0;
+}
+.safety__img {
+	width: 62px;
+	height: 74px;
+}
+.safety__text1 {
+	font-family: montserratbold;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 50px;
+	line-height: 50px;
+	color: #FFF;
+	margin: 0;
+	padding: 0;
+}
+.safety__text2 {
+	font-family: montserratbold;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 25px;
+	line-height: 30px;
+	color: #FFF;
+	margin: 0;
+	padding: 0;
+}
+.buttons_second {
+	width: 330px;
+}
+.security__scheme {
+	position: relative;
+	background-image: url(img/model-s.png);
+	background-repeat: no-repeat;
+	background-position: 100% 20%;
+	background-size: 80% auto;
+	margin: 0;
+	width: calc(100% - 445px);
+}
+.scheme__img1 {
+	position: absolute;
+	top: 172px;
+	left: -98px;
+	width: 105%;
+	max-width: 1200px;
+}
+.scheme__img2 {
+	display: none;
+}
+@media (max-width: 950px) {
+	.header__nav {
+		max-width: 940px;
+	}
+	.item {
+		display: none;
+	}
+	.model__list {
+		display: none;
+		padding: 0;
+	}
+	.menu__list {
+		padding: 0;
+  	min-width: unset; /*чтобы элемент не выходил за границы header*/
+	}
+	.scheme__img1 {
+		top: 200px;
+	}
+}
+@media (max-width: 768px) {
+	.header__nav {
+		max-width: 720px;
+	}
+	.item {
+		display: none;
+	}
+	.model__list {
+		display: none;
+		padding: 0;
+	}
+	.menu__list {
+		padding: 0;
+  	min-width: unset; /*чтобы элемент не выходил за границы header*/
+	}
+	.btn__list {
+		width: 38px;
+	}
+	.line {
+		height: 2.5px;
+	}
+	.line::after {
+		top: 10px;
+	}
+	.line::before {
+		top: -10px;
+	}
+	.header {
+		margin-bottom: 60px;
+	}
+	.tesla {
+		margin: 0 0 55px 0;
+	}
+	.tesla__disc {
+		min-height: 453px;
+		max-width: 768px;
+		min-width: 375px;
+		background-image: url(img/teslalogo-car.png);
+		background-position: left;
+    background-size: 100% auto;
+	}
+	.detail {
+		display: flex;
+		justify-content: center;
+		margin: 0 0 60px 0;
+	}
+	.wrap {
+		flex-wrap: wrap;
+		max-width: 500px;
+		min-height: 190px;
+	}
+	.speed {
+		margin: 0 75px 0 0;
+		align-self: flex-start;
+	}
+	.speed__img {
+		width: 80px;
+		margin: 0 10px 0 0;
+	}
+	.speed__desc1 {
+		font-size: 50px;
+	}
+	.run {
+		margin: 0 20px 0 0;
+		align-self: flex-start;
+	}
+	.run__img {
+		width: 80px;
+	}
+	.run__desc1 {
+		font-size: 50px;
+	}
+	.wrap__link {
+		margin: 0 48px 8px 0;
+		align-self: flex-end;
+	}
+	.wrap__img {
+		background-image: url(img/steering-wheel.png);
+		width: 33px;
+		height: 33px;
+		margin: 0 15px 0 0;
+	}
+	.wrap__test {
+		color: #E51937;
+		font-size: 16px;
+	}
+	.order {
+		min-height: 50px;
+		min-width: 217px;
+	}
+	.order_red {
+    background: #E51937;
+    margin: 0;
+    align-self: flex-end;
+	}
+	.order__button {
+		font-size: 16px;
+	}
+	.order__button_red {
+    color: #FFF;
+	}
+	.description__conteiner {
+		flex-direction: column;
+	}
+	.description__panel {
+		min-height: 500px;
+		width: 100%;
+	}
+	.description__column {
+		width: 100%;
+		min-height: 487px;
+		padding: 55px 80px 0 35px;
+	}
+	.panel__title {
+		padding: 8px 53px 0 0;
+		text-align: right;
+	}
+	.column__block-section2 {
+		display: flex;
+		justify-content: space-between;
+		max-height: 315px;
+	}
+	.column__left-section2 {
+		max-width: 330px;
+	}
+	.column__title_indentbig {
+		margin: 0 0 25px 0;
+	}
+	.column__right-section2 {
+		padding: 8px 0 0 0;
+	}
+	.specific {
+		margin: 0;
+	}
+	.specific__display {
+		padding: 0;
+		margin: 0 0 20px 0;
+	}
+	.specific__wifi {
+		margin: 0 0 25px 0;
+	}
+	.buttons {
+		margin: 0 auto;
+	}
+	.buttons_first {
+		min-width: 500px;
+	}
+	.link__img {
+		width: 30px;
+		height: 30px;
+		background-repeat: no-repeat;
+		background-size: 100% auto;
+	}
+	.link__inform {
+		font-size: 16px;
+	}
+	.link_two {
+		padding: 12px 0 0 45px;
+	}
+	.security__conteiner {
+		flex-direction: column-reverse;
+	}
+	.security__scheme {
+		min-height: 537px;
+		min-width: 100%;
+		background-size: 77% auto;
+		background-position: 55% 16%;
+	}
+	.scheme__img1 {
+		display: none;
+	}
+	.scheme__img2 {
+		display: block;
+		position: absolute;
+		top: 75px;
+		width: 100%;
+		max-width: 735px;
+	}
+	.security__column {
+		width: 100%;
+		height: 487px;
+		padding: 63px 53px 0 35px;
+	}
+	.column__block-section3 {
+		display: flex;
+		justify-content: space-between;
+		max-height: 297px;
+	}
+	.column__left-section3 {
+		max-width: 325px;
+	}
+	.buttons_second {
+		min-width: 480px;
+	}
+	.safety {
+		display: none;
+	}
+}
+@media (max-width: 675px) {
+	.column__title {
+		font-size: 25px;
+	}
+	.buttons {
+		display: none;
+	}
+}
+@media (max-width: 645px) {
+	.column__right-section2 {
+		display: none;
+	}
+	.column__left-section2 {
+    max-width: 630px;
+	}
+	.column__right-section3 {
+		display: none;
+	}
+	.column__left-section3 {
+    max-width: 630px;
+	}
+}
+@media (max-width: 480px) {
+	.speed {
+		margin: 0;
+	}
+	.column__right-section2 {
+		display: none;
+	}
+	.column__left-section2 {
+    max-width: 390px;
+	}
+	.column__right-section3 {
+		display: none;
+	}
+	.column__left-section3 {
+    max-width: 390px;
+	}
+	.buttons_first {
+    min-width: 360px;
+  }
+  .buttons_second {
+    min-width: 360px;
+	}
+  .link_two {
+    padding: 12px 0 0 0;
+  }
+  .order {
+    min-height: 50px;
+    min-width: 150px;
+  }
+  .scheme__img2 {
+  	top: 150px;
+  }
+}
+@media (max-width: 420px) {
+	.speed__desc1 {
+    font-size: 30px;
+	}
+	.speed__img {
+    width: 50px;
+    margin: 0 10px 0 0;
+	}
+	.run__desc1 {
+    font-size: 30px;
+	}
+	.run__img {
+    width: 50px;
+    margin: 0 10px 0 0;
+	}
+	.column__title {
+		font-size: 20px;
+	}
+}
+@media (max-width: 375px) {
+	.header {
+		margin: 7px 0 10px 0;
+	}
+	.header__logo {
+		width: 135px;
+	}
+	.header__nav {
+		padding-left: 3px;
+		padding-right: 13px;
+	}
+	.line {
+		height: 2px;
+		width: 60%;
+	}
+	.line::before {
+		top: -7px;
+	}
+	.line::after {
+		top: 7px;
+	}
+	.btn__list {
+		padding: 0 0 5px 0;
+	}
+	.tesla {
+		margin: 0;
+	}
+	.tesla__title {
+		font-size: 50px;
+		height: 59px;
+	}
+	.tesla__subtitle {
+		font-size: 10px;
+		padding: 0;
+	}
+	.tesla__wrap {
+		margin: 0 0 2px 0;
+	}
+	.tesla__disc {
+		min-height: 240px;
+		max-width: 375px;
+		min-width: 240px;
+		background-image: url(img/teslalogo-car-mob.png);
+	}
+	.wrap {
+		min-height: 130px;
+	}
+	.speed {
+		margin: 0 10px 0 0;
+	}
+	.speed__img {
+		width: 48px;
+		margin: 0 10px 0 5px;
+	}
+	.speed__desc1 {
+		font-size: 27px;
+		margin: 0 5px 0 0;
+	}
+	.speed__desc2 {
+		font-size: 15px;
+	}
+	.speed__text {
+		font-size: 10px;
+	}
+	.run {
+		margin: 0;
+	}
+	.run__img {
+		width: 48px;
+		margin: 0 8px 0 0;
+	}
+	.run__desc1 {
+		font-size: 27px;
+		margin: 0 4px 0 0;
+	}
+	.run__desc2 {
+		font-size: 15px;
+	}
+	.run__text {
+		font-size: 10px;
+	}
+	.wrap__link {
+		margin: 0 23px 10px 0;
+	}
+	.wrap__img {
+		width: 25px;
+		height: 25px;
+		margin: 0 7px 0 0;
+	}
+	.wrap__test {
+		font-size: 13px;
+	}
+	.order__button {
+		font-size: 13px;
+	}
+	.order {
+		min-height: 38px;
+		min-width: 155px;
+	}
+	.detail {
+		margin: 0 0 28px 0;
+	}
+	.description__conteiner {
+		min-height: 600px;
+	}
+	.panel__title {
+		display: none;
+	}
+	.description__panel {
+		min-height: 314px;
+		background-position: -30px 0;
+	}
+	.description__column {
+		min-height: 302px;
+		padding: 25px 18px 0 27px;
+	}
+	.buttons {
+		display: none;
+	}
+	.column__title {
+		font-size: 30px;
+		font-family: montserratregular;
+		font-style: normal;
+		font-weight: 600;
+	}
+	.column__title_indentbig {
+		margin: 0 0 18px 0;
+		line-height: 20px;
+	}
+	.column__body {
+		line-height: 19px;
+	}
+	.column__body_indentbig {
+		margin: 0;
+	}
+	.security__scheme {
+		min-height: 295px;
+		background-size: 105% auto;
+		background-position: 0 21%;
+	}
+	.scheme__img2 {
+		top: 58px;
+		left: 5px;
+		width: 95%;
+	}
+	.security__conteiner {
+		min-height: 500px;
+	}
+	.security__column {
+		height: auto;
+		padding: 18px 25px 30px 31px;
+	}
+	.column__block-section3 {
+		max-height: unset;
+	}
+	.column__title_indentsmall {
+		margin: 0 0 11px 0;
+	}
+	.column__body_indentsmall {
+		margin: 0;
+	}
 }
